@@ -1,0 +1,29 @@
+.admin_home{
+    height: auto;
+    background-color: #242424;
+    color: white;
+}
+.admin_header{
+    font-size: 18pt;
+    padding: 2rem;
+}
+.admin_options{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.admin_options a{
+    margin: 0rem;
+}
+.admin_home button{
+    margin: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+@media (min-width: 1024px) {
+    .admin_options a{
+        margin: 0rem 15rem;
+    }
+}
