@@ -50,8 +50,8 @@ function App() {
         <Route path='editsalespost/singlesaleedit/:id' element={authCtx.token ? <SingleEditSalesPost /> : <Navigate to='/login'/>}/>
         <Route path='/newpromotionspost' element={authCtx.token ? <NewPromotionsPost /> : <Navigate to='/login'/>}/>
         <Route path='/deletepromotionspost' element={authCtx.token ? <EditPromotionsPost /> : <Navigate to='/login'/>}/>
-        <Route path='/login' element={!authCtx.token ? <LoginPage /> : <Navigate to='/adminhome'/>} />
-        <Route path='*' element={<AdminHome />}/>
+        <Route path='/' element={authCtx.token ? <Navigate to='/adminhome' /> : <LoginPage />} />
+        <Route path='*' element={<Navigate to='/' />} />
       </Routes>
     </div>
   );
