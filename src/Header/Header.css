@@ -10,3 +10,15 @@
     width: 50vw ;
     padding: 3rem;
 }
+
+
+
+
+
+@media (min-width: 1200px) {
+
+    .admin_logo{
+        width: 35vw;
+    }
+    
+}
