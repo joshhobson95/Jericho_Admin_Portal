@@ -42,14 +42,14 @@ function AdminHome() {
       <NavLink to='/newpromotionspost'>
       <button>Create a Promotion Post</button>
       </NavLink>
-      <NavLink to='/deletepromotionspost'>
-      <button>Delete a Promotion Post</button>
+      <NavLink to='/editpromotionspost'>
+      <button>Edit/Delete a Promotion Post</button>
       </NavLink>
       <NavLink to='/newsalespost'>
       <button>Create a Sales Post</button>
       </NavLink>
       <NavLink to='/editsalespost'>
-      <button>Edit/Delete/Wipe Sales Posts</button>
+      <button>Edit/Delete Sales Posts</button>
       </NavLink>
       (Carousel near top of page)
       <NavLink to='/newgalleryimg'>

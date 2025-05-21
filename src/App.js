@@ -20,7 +20,7 @@ import DeleteGallery2Img from './AdminPortal/HomeGallery2/DeleteGallery2Img';
 import PreviewPost from './AdminPortal/BlogPosts/PreviewPost/PreviewPost';
 import SinglePreviewEdit from './AdminPortal/BlogPosts/PreviewPost/SinglePreviewEdit';
 import Header from './Header/Header';
-
+import SingleEditPromotionsPost from './AdminPortal/PromotionsPosts/EditPromotionsPost/SingleEditPromoPost';
 
 
 
@@ -49,7 +49,8 @@ function App() {
         <Route path='/editsalespost' element={authCtx.token ? <EditSalesMain/> : <Navigate to='/login'/>}/>
         <Route path='editsalespost/singlesaleedit/:id' element={authCtx.token ? <SingleEditSalesPost /> : <Navigate to='/login'/>}/>
         <Route path='/newpromotionspost' element={authCtx.token ? <NewPromotionsPost /> : <Navigate to='/login'/>}/>
-        <Route path='/deletepromotionspost' element={authCtx.token ? <EditPromotionsPost /> : <Navigate to='/login'/>}/>
+        <Route path='editpromotionspost/singlepromotionsedit/:id' element={authCtx.token ? <SingleEditPromotionsPost /> : <Navigate to='/login'/>}/>
+        <Route path='/editpromotionspost' element={authCtx.token ? <EditPromotionsPost /> : <Navigate to='/login'/>}/>
         <Route path='/' element={authCtx.token ? <Navigate to='/adminhome' /> : <LoginPage />} />
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
