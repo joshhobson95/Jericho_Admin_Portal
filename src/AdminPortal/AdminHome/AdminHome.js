@@ -66,10 +66,7 @@ function AdminHome() {
         <button>Delete Photos to Jericho Img Carousel</button>
       </NavLink>
 
-    <NavLink to='/popupform'>
-      <button>Pop-Up</button>
-    </NavLink>
-     
+
 
       </div>
 
