@@ -66,6 +66,13 @@ function AdminHome() {
         <button>Delete Photos to Jericho Img Carousel</button>
       </NavLink>
 
+      <NavLink to='/newbulletinpost'>
+        <button>New Bulletin Post</button>
+      </NavLink>
+      <NavLink to='/editbulletinpost'>
+        <button>Edit Bulletin Post</button>
+      </NavLink>
+
 
 
       </div>

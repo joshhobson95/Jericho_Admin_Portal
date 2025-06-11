@@ -21,8 +21,9 @@ import PreviewPost from './AdminPortal/BlogPosts/PreviewPost/PreviewPost';
 import SinglePreviewEdit from './AdminPortal/BlogPosts/PreviewPost/SinglePreviewEdit';
 import Header from './Header/Header';
 import SingleEditPromotionsPost from './AdminPortal/PromotionsPosts/EditPromotionsPost/SingleEditPromoPost';
-
-
+import NewBulletinPost from './AdminPortal/BulletinPost/NewBulletinPost/NewBulletinPost';
+import EditBulletinPost from './AdminPortal/BulletinPost/EditBulletinPost/EditBulletinPost';
+import SingleEditBulletinPost from './AdminPortal/BulletinPost/EditBulletinPost/SingleEditBulletinPost';
 
 
 
@@ -51,6 +52,13 @@ function App() {
         <Route path='/newpromotionspost' element={authCtx.token ? <NewPromotionsPost /> : <Navigate to='/login'/>}/>
         <Route path='editpromotionspost/singlepromotionsedit/:id' element={authCtx.token ? <SingleEditPromotionsPost /> : <Navigate to='/login'/>}/>
         <Route path='/editpromotionspost' element={authCtx.token ? <EditPromotionsPost /> : <Navigate to='/login'/>}/>
+        <Route path='/newbulletinpost' element={authCtx.token ? <NewBulletinPost /> : <Navigate to='/login'/>}/>
+        <Route path='/editbulletinpost' element={authCtx.token ? <EditBulletinPost /> : <Navigate to='/login'/>}/>
+        <Route path='/editbulletinpost/singlebulletinedit/:id' element={authCtx.token ? <SingleEditBulletinPost /> : <Navigate to='/login'/>}/>
+      
+
+
+
         <Route path='/' element={authCtx.token ? <Navigate to='/adminhome' /> : <LoginPage />} />
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
