@@ -1,0 +1,14 @@
+.edit_bulletin_item{
+    height: auto;
+    min-height: 100vh;
+    background-color: #242424;
+    padding-top: 15vh;
+    color: white;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+}
+
+  
+ 
+  

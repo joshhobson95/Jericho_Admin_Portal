@@ -57,10 +57,10 @@ const NewBulletinPost = () => {
 
 
   return (
-    <div className="create_promotion_item">
+    <div className="create_bulletin_item">
 
-<div className="create_promotion_item_body">
-    <form onSubmit={handleSubmit} className="promotion_item_form">
+<div className="create_bulletin_item_body">
+    <form onSubmit={handleSubmit} className="bulletin_item_form">
       <label>
         Title
         <input
@@ -90,7 +90,8 @@ const NewBulletinPost = () => {
       </label>
       <label>
         Paragraph
-        <input
+        <textarea
+          className="bulletin_paragraph"
           type="text"
           name="paragraph"
           value={bulletinFormData.paragraph}

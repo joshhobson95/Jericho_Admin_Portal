@@ -1,4 +1,4 @@
-.create_promotion_item{
+.create_bulletin_item{
     height: auto;
     background-color: #242424;
     padding: 10rem 4rem;
@@ -8,16 +8,16 @@
     justify-content: center;
     flex-direction: column;
 }
-.promotion_item_form{
+.bulletin_item_form{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.promotion_item_form button{
+.bulletin_item_form button{
     height: auto;
     width: auto;
     padding: 0.5rem 1.25rem;
-   background-color: #34551a;
+   background-color: #5072bd;
     border: none;
     border-radius: 20px;
     font-family: 'Raleway';
@@ -31,8 +31,18 @@
 }
 
 
-.promotion_item_form button:hover{
+.bulletin_item_form button:hover{
     background-color: #ffffff;
-    color: #34551a;
+    color: #5072bd;
     transition: 1s;
+}
+
+.bulletin_paragraph{
+    height: 10rem;
+    width: 30rem;
+}
+
+.bulletin_item_form input{
+    margin: 0.5rem;
+    padding: 1rem;
 }

@@ -44,29 +44,24 @@ function EditBulletinPost() {
 
 
   return (
-    <div className='edit_sales_item'>
+    <div className='edit_bulletin_item'>
       <table>
         <thead>
           <tr>
             <th>Id</th>
-            <th>Title</th>
-            <th>Image</th>
-            <th>Alt Text</th>
+            <th>Title</th>         
             <th>Paragraph</th>
             <th>Date</th>
-            <th>Link</th>
+
           </tr>
         </thead>
         <tbody>
           {bulletinData.map((item) => (
             <tr key={item.bulletintableid}>
               <td>{item.bulletintableid}</td>
-              <td>{item.title}</td>
-              <td>{item.img_url}</td>
-              <td>{item.alt_text}</td>
+              <td>{item.title}</td>          
               <td>{item.paragraph}</td>
               <td>{item.date}</td>
-              <td>{item.link}</td>
               <td>
                 <NavLink to={`singlebulletinedit/${item.bulletintableid}`}>
                   <button>Edit</button>
