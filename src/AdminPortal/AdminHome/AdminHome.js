@@ -67,10 +67,10 @@ function AdminHome() {
       </NavLink>
 
       <NavLink to='/newbulletinpost'>
-        <button>New Bulletin Post</button>
+        <button>New Announcements Post</button>
       </NavLink>
       <NavLink to='/editbulletinpost'>
-        <button>Edit Bulletin Post</button>
+        <button>Edit Announcements Post</button>
       </NavLink>
 
 
